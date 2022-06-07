@@ -50,7 +50,7 @@ export default function AddExpense({addExpense}) {
                 </div>
                 <div className="amount">
                     <label htmlFor="expense_amount">Amount</label>
-                    <input type="float" id="expense_amount" placeholder="100.95" onChange={handleAmountChange}/>
+                    <input type="float" id="expense_amount" placeholder="100.95" onChange={handleAmountChange} autoComplete='off'/>
                 </div>
             </div>
             <button>Add Expense</button>
