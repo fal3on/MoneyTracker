@@ -1,0 +1,41 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+form .form-group{
+    display: flex;
+    gap: 2rem;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form .form-group input, form .form-group select{
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-top: .5rem;
+}
+
+form button{
+    all: unset;
+    background-color: var(--success);
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+form button:hover{
+    color: #100029;
+    border: 2px solid var(--success);
+}

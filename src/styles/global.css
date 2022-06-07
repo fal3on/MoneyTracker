@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* bootstrap 5 colors as variables */
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --white: #fff;
+  --black: #000;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --gray-light: #6c757d;
+  --gray-lighter: #f8f9fa;
+  --gray-lightest: #f8f9fa;
+  --gray-darker: #343a40;
+  --gray-darkest: #343a40;
+  --gray-darkest-darker: #343a40;
+  --gray-darker-darker: #343a40;
+  --gray-darker-darkest: #343a40;
+  --gray-darkest-darker-darker: #343a40;
+  --gray-darker-darker-darkest: #343a40;
+  --gray-darkest-darker-darker-darker: #343a40;
+  --gray-darker-darker-darker-darkest: #343a40;
+  --gray-darkest-darker-darker-darker-darker: #343a40;
+  --gray-darker-darker-darker-darkest-darker: #343a40;
+  --gray-darkest-darker-darker-darkest-darker-darker: #343a40;
+  --gray-darker-darker-darker-darkest-darker-darker-darker: #343a40;
+  --gray-darkest-darker-darker-darkest-darker-darker-darker-darker: #343a40;
+  --gray-darker-darker-darker-darkest-darker-darker-darker-darkest: #343a40;
+}
+
+
+p {
+  max-width: 75inch;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  background-color: #100029;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

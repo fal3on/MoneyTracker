@@ -1,0 +1,143 @@
+.card {
+    box-shadow: 0 0.5rem 1rem var(--gray-dark);
+    padding: 1rem;
+    background-color: var(--gray-darker);
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+    color: var(--gray-dark);
+    overflow: hidden;
+}
+
+.card .card_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.card_body .basic_info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+/* styles for basic info contents */
+/* .basic_info .expense_category {
+    background-color: steelblue;
+} */
+
+.expense_category .icon{
+    display: block;
+    background-color: var(--white);
+    padding: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--black);
+}
+
+i {
+    display: flex;
+}
+
+.basic_info .expense_amount {
+    /* background-color: #f0f0f0; */
+    padding: .4rem;
+    color: var(--danger);
+}
+
+/* styles for info toggle */
+.info_toggle {
+    color: var(--gray-dark);
+    padding: .4rem;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.info_toggle #my-toggle {
+    display: none;
+}
+
+#my-toggle:checked + .toggle-btn {
+    color: var(--warning);
+}
+
+.info_toggle .toggle-btn {
+    cursor: pointer;
+}
+
+/* end styles for info toggle */
+
+.card_body .actions{
+    display: flex;
+    gap: .5rem;
+    /* background-color: salmon; */
+}
+
+.card_body .actions button{
+    all: unset;
+    cursor: pointer;
+    padding: .4rem;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    transition: all .2s ease;
+}
+
+.card_body .actions .edit {
+    background-color: var(--primary);
+}
+
+.card_body .actions .delete {
+    background-color: var(--danger);
+}
+
+.card_body .actions .cancel {
+    background-color: var(--info);
+}
+
+.card_body .actions .save {
+    background-color: var(--success);
+}
+
+.actions .edit:hover, .actions .delete:hover, .actions .cancel:hover, .actions .save:hover {
+    color: var(--black);
+    border: 2px solid var(--black);
+}
+
+.wrap .more_info{
+    display: none; /* edit for toggle */
+    height: 100%; /* edit for toggle */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #eee;
+    border-radius: 5px;
+    z-index: 1;
+    position: relative;
+    top: -25px;
+}
+
+.wrap .more_info .expense_category, .expense_date {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.edit_mode input, select{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Card category colors */
+/* .Hogar {
+    background-color: var(--info);
+    border: 2px solid var(--success);
+} */
